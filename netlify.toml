@@ -1,9 +1,4 @@
 [build]
-  functions = "functions-build"
-  # This will be run the site build
-  command = "yarn run build"
-  # This is the directory is publishing to netlify's CDN
-  publish = "dist"
-
-[template.environment]
-  FAUNADB_SECRET = "Fauna DB Secret Key"
+  Command = "yarn build"
+  Functions = "lambda"
+  Publish = "dist"

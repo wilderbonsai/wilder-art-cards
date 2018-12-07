@@ -8,7 +8,7 @@ function clear(){
     });
 }
 function checkForFaunaKey() {
-  if (!process.env.FAUNADB_SECRET) {
+  if (!process.env.MONGODB_ATLAS_CLUSTER_URI) {
     console.log(chalk.yellow('Required FAUNADB_SECRET enviroment variable not found.'))
     console.log(`
 =========================
